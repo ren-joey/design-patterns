@@ -1,7 +1,7 @@
-package main;
+package topic1_strategy.main;
 
-import behaviors.implementations.FlyNoWay;
-import behaviors.implementations.Quack;
+import topic1_strategy.behaviors.implementations.FlyNoWay;
+import topic1_strategy.behaviors.implementations.Quack;
 
 public class ModelDuck extends Duck {
     public ModelDuck() {

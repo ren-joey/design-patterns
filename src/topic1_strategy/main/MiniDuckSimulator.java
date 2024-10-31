@@ -1,6 +1,6 @@
-package main;
+package topic1_strategy.main;
 
-import behaviors.implementations.FlyRocketPowered;
+import topic1_strategy.behaviors.implementations.FlyRocketPowered;
 
 public class MiniDuckSimulator {
     public static void main(String[] args) {

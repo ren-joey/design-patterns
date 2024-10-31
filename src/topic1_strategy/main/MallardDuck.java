@@ -1,7 +1,7 @@
-package main;
+package topic1_strategy.main;
 
-import behaviors.implementations.FlyWithWings;
-import behaviors.implementations.Quack;
+import topic1_strategy.behaviors.implementations.FlyWithWings;
+import topic1_strategy.behaviors.implementations.Quack;
 
 public class MallardDuck extends Duck {
     public MallardDuck() {
