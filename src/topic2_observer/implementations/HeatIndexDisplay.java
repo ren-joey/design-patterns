@@ -6,11 +6,19 @@ import topic2_observer.interfaces.Subject;
 
 public class HeatIndexDisplay implements Observer, DisplayElement {
     private float heatIndex = 0.0f;
-    private Subject weatherData;
+    private WeatherData weatherData;
 
-    public HeatIndexDisplay(Subject weatherData) {
+    public HeatIndexDisplay(WeatherData weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
+    }
+
+    // This method is called when the data is updated
+    public void update() {
+        float temp = weatherData.getTemperature();
+        float humidity = weatherData.getHumidity();
+        heatIndex = computeHeatIndex(temp, humidity);
+        display();
     }
 
     public void update(float temp, float humidity, float pressure) {
