@@ -10,6 +10,6 @@ public class Soy extends CondimentDecorator {
     }
 
     public double cost() {
-        return .15 + beverage.cost();
+        return costCalculation(.30) + beverage.cost();
     }
 }
