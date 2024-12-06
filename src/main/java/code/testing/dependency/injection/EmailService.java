@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 //@RequiredArgsConstructor // good practice for catching NullPointerException
 public class EmailService {
 
-    // private final EmailValidator emailValidator; // good practice for catching NullPointerException
+//     private final EmailValidator emailValidator; // good practice for catching NullPointerException
     @Autowired
     private EmailValidator emailValidator; // bad practice for catching NullPointerException
 
