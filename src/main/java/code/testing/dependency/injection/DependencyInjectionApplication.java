@@ -10,7 +10,7 @@ public class DependencyInjectionApplication {
         SpringApplication.run(DependencyInjectionApplication.class, args);
 
         // if the error shows up in IDE, it means NullPointerException caught successfully
-        EmailService emailService = new EmailService();
-        emailService.process("test@baeldung.com");
+//        EmailService emailService = new EmailService();
+//        emailService.process("test@baeldung.com");
     }
 }
